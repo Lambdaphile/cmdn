@@ -1,16 +1,23 @@
 {
-  "name": "notes-app",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "author": "Genesis Algorithms",
+  "bin": {
+    "cmdn": "./bin/index.js"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.0",
     "lodash": "^4.17.20",
     "yargs": "^16.2.0"
-  }
+  },
+  "description": "",
+  "devDependencies": {
+    "@types/jest": "^26.0.24",
+    "jest": "^27.0.6"
+  },
+  "license": "MIT",
+  "main": "bin/index.js",
+  "name": "cmdn",
+  "scripts": {
+    "test": "jest"
+  },
+  "version": "1.0.0"
 }
