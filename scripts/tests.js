@@ -8,7 +8,7 @@ console.log("backing up cmds.json");
 const cmdsBackup = `${homedir}/.cmds.backup.json`;
 fs.renameSync(cmdsPath, cmdsBackup);
 
-execSync("npm run jest", { stdio: "inherit" });
+execSync("npm run jest");
 
 console.log("\nrestoring cmds.json");
 fs.rmSync(cmdsPath);
