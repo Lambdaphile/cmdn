@@ -17,7 +17,8 @@
   "main": "bin/index.js",
   "name": "cmdn",
   "scripts": {
-    "test": "jest"
+    "jest": "jest",
+    "tests": "node scripts/tests.js"
   },
   "version": "1.0.0"
 }
