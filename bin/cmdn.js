@@ -21,7 +21,7 @@ const save = (cmds) => {
 
 const add = (cmd, desc) => {
   const cmds = load();
-  const isNew = _.some(cmds, (curr) => _.toLower(curr.cmd) !== _.toLower(cmd));
+  const isNew = _.every(cmds, (curr) => _.toLower(curr.cmd) !== _.toLower(cmd));
 
   if (_.isEmpty(cmds) || isNew) {
     cmds.push({ cmd, desc });
