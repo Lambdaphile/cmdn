@@ -8,8 +8,7 @@ module.exports = {
       demandOption: true,
       type: "string",
     },
-    d: {
-      alias: "desc",
+    desc: {
       describe: "Command description",
       demandOption: false,
       type: "string",
